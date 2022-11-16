@@ -1,0 +1,31 @@
+{
+  "name": "devmon",
+  "version": "0.0.1",
+  "description": "Simple dashboard for your development server.",
+  "homepage": "https://github.com/seandou/devmon",
+  "keywords": [
+    "dashboard",
+    "development",
+    "monitor"
+  ],
+  "author": "Sean Dou <douguohui@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "main": "./lib/index.js",
+  "dependencies": {
+  },
+  "bin": {
+    "devmon": "./bin/devmon"
+  },
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seandou/devmon.git"
+  }
+}

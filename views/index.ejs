@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncryptAPassword</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+        }
+        form{
+            width: 400px;
+            height: 250px;
+            background-color: rgba(255,255,255,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        #pass{
+            border: 0;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.35);
+            padding: 10px;
+            color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+        #submit-button{
+            border: 0;
+            background-color: rgba(255,255,255,0.5);
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h2{
+            color: white;
+            margin-bottom: -2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        hr{
+            width: 200px;
+            border-bottom: 1px solid white;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/hashPass" method="post">
+        <h2>Generate HashPass</h2>
+        <hr>
+        <input type="password" name="pass" id="pass" placeholder="Enter a Password"><br>
+        <input type="submit" id="submit-button" value="Generate Hash">
+    </form>
+</body>
+</html>
