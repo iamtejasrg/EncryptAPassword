@@ -16,6 +16,7 @@ app.get('/', (req,res)=>{
 })
 
 app.post('/hashPass', async(req, res)=>{
+    hashedPass = await bcrypt.hash(req.body.pass, 10)
     console.log(req.body.pass+'\n'+hashedPass);
     res.send('Hashed the Pass')
 })
